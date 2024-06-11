@@ -2,6 +2,11 @@
 from typing import List
 
 
+"""compare two consective element from start if its greater swap
+it will put highest element at last for 1 iteration
+"""
+
+
 def bubble_sort(array: List) -> List:
     for i in range(len(array)-1):
         for j in range(len(array)-1-i):
