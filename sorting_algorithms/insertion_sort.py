@@ -5,21 +5,21 @@
 
 
 def insertion_sort(array):
-    for i in range(len(array)):
-        if i == 0:
-            continue
+    for i in range(1, len(array)):
+        j = i-1
+        key = array[i]
 
-        j = 0
-        while (j < i):
-            if array[j] > array[i]:
-                array[j], array[i] = array[i], array[j]
+        while (j >= 0) and key < array[j]:
+            array[j+1] = array[j]
+            j -= 1
 
-            j += 1
+        array[j+1] = key
+
     return array
 
 
 array = [9, 8, 7, 1, 2, 3, 0]
 
-array = [7, 8, 9, 1, 4, 5]
+# array = [7, 8, 9, 1, 4, 5]
 
 print(insertion_sort(array))
