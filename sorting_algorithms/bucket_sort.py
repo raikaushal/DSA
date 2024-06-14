@@ -36,5 +36,6 @@ def bucket_sort(arr):
     return result
 
 
-array = array = [5, 3, 4, 7, 2, 8, 6, 9, 1]
+array = [5, 3, 4, 7, 2, 8, 6, 9, 1]
+array = array = [9, 8, 7, 1, 2, 3, 0]
 print(bucket_sort(array))
