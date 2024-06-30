@@ -1,5 +1,8 @@
 
 
+import pprint
+
+
 def pivot_function(arr, pivot_index, right_index):
     swap_index = pivot_index
     for i in range(pivot_index+1, right_index + 1):
@@ -21,4 +24,15 @@ def quick_sort(arr, l, r):
 
 arr = [9, 8, 7, 4, 2, 1, 0]
 
-print(quick_sort(arr, 0, len(arr)-1))
+# print(quick_sort(arr, 0, len(arr)-1))
+
+
+dict = {
+    "A": ["B", "C", "D"],
+    "B": ["B", "C", "D"],
+    "C": ["B", "C", "D"],
+    "D": ["B", "C", "D"]
+}
+
+
+pprint.pp(dict)
