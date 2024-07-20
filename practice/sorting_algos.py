@@ -31,6 +31,4 @@ def insertion_sort(arr):
     return arr
 
 
-data = [8, 7]
-
 print(insertion_sort(data))
